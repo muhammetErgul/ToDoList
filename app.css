@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+body {
+    height: 100vh;
+    background-color: bisque;
+}
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+#header {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Koulen', cursive;
+    letter-spacing: 3px;
+    color:crimson;
+}
+a {
+    color: white;
+}
+ul li.checked {
+    background: #276678;
+    color: #fff;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 13px;
+    left: 6px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;   
+}
+ul li {
+    cursor: pointer;
+}
